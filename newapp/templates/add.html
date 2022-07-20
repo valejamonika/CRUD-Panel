@@ -1,0 +1,31 @@
+{% extends 'welcome.html' %}
+
+{% block title %} Add A Record {% endblock %}
+
+{% block body %}
+
+<form method="POST" action="reguser">
+
+    {% csrf_token %}
+     <h2 style="margin-top:100px;">{{msg}}</h2>
+    <h3> Add New Employee...!!!</h3>
+    <div class="mb-3 ms-5 my-5 mx-5">
+    <label class="form-label">Employee Id</label>
+    <input type="text" class="form-control" name="eid" placeholder="E___" required>
+  </div>
+    <div class="mb-3 ms-5 my-3 mx-5">
+    <label class="form-label">Employee Name</label>
+    <input type="text" class="form-control" name="ename" placeholder="Abhinav Singh" required>
+  </div>
+  <div class="mb-3 ms-5 my-3 mx-5">
+    <label class="form-label">Email address</label>
+    <input type="email" class="form-control" name="eemail" placeholder="as@gmail.com" required>
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3 ms-5 my-3 mx-5">
+    <label class="form-label">Employee Contact Number</label>
+    <input type="text" class="form-control" name="econtact" placeholder="7894561235" required>
+  </div>
+        <input type="submit" class="btn btn-primary my-3 mx-5" name="sub" value="Add New Employee">
+</form>
+{% endblock %}

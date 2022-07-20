@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body style="background:Bisque">
+
+<div class="container">
+    <div class="row">
+            <div class="col-md-6 col-ld-6 col-xl-6 mx-auto" style="border:2px solid grey; border-radius:20px;margin-top:50px;background-color:skyblue;opacity:0.5">
+            <form action="go" method="POST">
+                {% csrf_token %}
+                <div class="mb-3  ms-5 my-5 mx-5">
+                    <label class="form-label" style="color:blue; font-size:30px; font-weight:bold;">Enter User Name</label>
+                    <input type="text" class="form-control" name="username">
+                </div>
+                <div class="mb-3  ms-5 my-5 mx-5">
+                    <label class="form-label" style="color:blue; font-size:30px; font-weight:bold;"> Enter Password</label>
+                    <input type="password" class="form-control" name="password">
+                </div>
+                <div class="mb-3  ms-5 my-5 mx-5">
+                    <center><input class=" btn btn-primary btn-lg mx-5" type="submit" value="Login"></center>
+                </div>
+
+            </form>
+            </div>
+    </div>
+</div>
+<center>
+<div class="fixed-bottom">
+    <div class="card">
+  <div class="card-header" style="background:Silver">
+    DEVELOPER
+  </div>
+  <div class="card-body" style="background:Bisque">
+
+    <p class="card-text" >Monika Valeja</p>
+
+  </div>
+</div>
+</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{% extends 'welcome.html' %}
+
+{% block title %} Display A Record {% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-12 mb-3 ms-5 my-5 mx-5">
+            <table class="table table-bordered my-5">
+                <thead>
+                <tr bgcolor="grey">
+                    <th>Employee Id</th>
+                    <th>Employee Name</th>
+                    <th>Employee Email</th>
+                    <th>Employee Contact</th>
+                </tr>
+                </thead>
+                {% for i in employee %}
+                <tbody>
+                <tr>
+                    <td>{{ i.eid }}</td>
+                    <td>{{ i.ename }}</td>
+                    <td>{{ i.eemail }}</td>
+                    <td>{{ i.econtact }}</td>
+
+                </tr>
+                </tbody>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

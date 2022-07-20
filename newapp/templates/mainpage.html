@@ -1,0 +1,34 @@
+{% extends 'welcome.html' %}
+
+{% block title %} Welcome Page {% endblock %}
+
+{% block body %}
+{% load static %}
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="margin-top:90px; opacity:0.5; height:300px;">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="1000">
+
+    <center><img style="height:500px; width:1000px;" src="{% static 'img/c4.png' %}"/></center>
+
+    </div>
+    <div class="carousel-item" data-bs-interval="1000">
+     <center><img style="height:500px; width:1000px;" src="{% static 'img/c3.jpg' %}"/></center>
+    </div>
+    <div class="carousel-item" data-bs-interval="1000">
+     <center><img style="height:500px; width:1000px;" src="{% static 'img/c2.png' %}"/></center>
+    </div>
+      <div class="carousel-item">
+       <center><img style="height:500px; width:1000px;" src="{% static 'img/c1.png' %}"/></center>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+   <span class="visually-hidden">Next</span>
+  </button>
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'welcome.html' %}
+
+{% block title %} Update A Record {% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-lg-6 col-l-6 my-5 mx-5 ">
+            <h3 style="margin-top:100px;">{{msg}}</h3>
+            <form action="dele">
+                <div class="form-group mb-3 ms-5 my-5 mx-5">
+                    <h4>Employee ID</h4>
+
+                    <input type="text" class="form-control" name="eid" required placeholder="Enter Valid Employee Id ">
+                </div>
+                <br>
+                <input type="submit" class="btn btn-danger btn-lg mb-3 ms-5 " name="sub" value="Delete">
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

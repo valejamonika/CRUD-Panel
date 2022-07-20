@@ -1,0 +1,20 @@
+{% extends 'welcome.html' %}
+
+{% block title %} Update A Record {% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-lg-6 col-l-6  my-5 mx-5">
+            <form action="moredata">
+                <div class="form-group mb-3 ms-5 my-5 mx-5">
+                     <h4>Employee ID</h4>
+                    <input type="text" class="form-control " name="eid" required placeholder="Enter Valid Employee Id">
+                </div>
+                <input type="submit" class="btn btn-primary btn-lg mx-5 mb-5" name="sub" value="Edit">
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
